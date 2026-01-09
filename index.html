@@ -125,4 +125,78 @@ header select {
       <span>Bet Win</span><span style="color:#4caf50">+ $120</span>
     </div>
     <div class="tx">
-      <sp
+      <span>Bet Loss</span><span style="color:#f44336">- $50</span>
+    </div>
+    <div class="tx">
+      <span>Deposit</span><span style="color:#4caf50">+ $300</span>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <button id="home">Home</button>
+  <button id="bets">Bets</button>
+  <button id="wallet">Wallet</button>
+  <button id="profile">Profile</button>
+</div>
+
+<script>
+const translations = {
+  en: {
+    title: "Demo Betting",
+    balance: "Wallet Balance",
+    topup: "Top-Up Cards",
+    gift: "Gift Cards",
+    mobile: "Mobile Shop",
+    travel: "Travel Booking",
+    tx: "Transactions",
+    home: "Home",
+    bets: "Bets",
+    wallet: "Wallet",
+    profile: "Profile"
+  },
+  ar: {
+    title: "موقع مراهنات تجريبي",
+    balance: "رصيد المحفظة",
+    topup: "بطاقات الشحن",
+    gift: "بطاقات الهدايا",
+    mobile: "متجر الموبايل",
+    travel: "حجز السفر",
+    tx: "المعاملات",
+    home: "الرئيسية",
+    bets: "الرهانات",
+    wallet: "المحفظة",
+    profile: "الملف الشخصي"
+  },
+  ku: {
+    title: "سایتێکی تاقیکردنەوەی گرەو",
+    balance: "باڵانسی جزدان",
+    topup: "کارتەکانی تاپ-ئەپ",
+    gift: "کارتەکانی دیاری",
+    mobile: "فرۆشگای مۆبایل",
+    travel: "گەشتی گەشت",
+    tx: "مامەڵەکان",
+    home: "سەرەکی",
+    bets: "گرەوەکان",
+    wallet: "جزدان",
+    profile: "پرۆفایل"
+  }
+};
+
+function setLang(lang) {
+  document.getElementById("title").innerText = translations[lang].title;
+  document.getElementById("balanceTitle").innerText = translations[lang].balance;
+  document.getElementById("topup").innerText = translations[lang].topup;
+  document.getElementById("gift").innerText = translations[lang].gift;
+  document.getElementById("mobile").innerText = translations[lang].mobile;
+  document.getElementById("travel").innerText = translations[lang].travel;
+  document.getElementById("txTitle").innerText = translations[lang].tx;
+  document.getElementById("home").innerText = translations[lang].home;
+  document.getElementById("bets").innerText = translations[lang].bets;
+  document.getElementById("wallet").innerText = translations[lang].wallet;
+  document.getElementById("profile").innerText = translations[lang].profile;
+}
+</script>
+
+</body>
+</html>
