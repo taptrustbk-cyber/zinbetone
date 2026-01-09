@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Demo Betting Site</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b132b;
+  color: #fff;
+}
+header {
+  background: #1c2541;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header select {
+  background: #3a506b;
+  color: #fff;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+}
+.section {
+  padding: 16px;
+}
+.balance {
+  background: #1c2541;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.card {
+  background: linear-gradient(135deg, #3a506b, #1c2541);
+  border-radius: 14px;
+  padding: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.card span {
+  font-size: 30px;
+}
+.card p {
+  margin: 8px 0 0;
+  font-weight: bold;
+}
+.transactions {
+  margin-top: 20px;
+}
+.tx {
+  background: #1c2541;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1c2541;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.footer button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div id="title">Demo Betting</div>
+  <select onchange="setLang(this.value)">
+    <option value="en">EN</option>
+    <option value="ar">AR</option>
+    <option value="ku">KU</option>
+  </select>
+</header>
+
+<div class="section">
+  <div class="balance">
+    <div id="balanceTitle">Wallet Balance</div>
+    <h2>$1,250.00</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card" onclick="alert('Demo action')">
+      <span>💳</span>
+      <p id="topup">Top-Up Cards</p>
+    </div>
+    <div class="card">
+      <span>🎁</span>
+      <p id="gift">Gift Cards</p>
+    </div>
+    <div class="card">
+      <span>📱</span>
+      <p id="mobile">Mobile Shop</p>
+    </div>
+    <div class="card">
+      <span>✈️</span>
+      <p id="travel">Travel Booking</p>
+    </div>
+  </div>
+
+  <div class="transactions">
+    <h3 id="txTitle">Transactions</h3>
+    <div class="tx">
+      <span>Bet Win</span><span style="color:#4caf50">+ $120</span>
+    </div>
+    <div class="tx">
+      <sp
